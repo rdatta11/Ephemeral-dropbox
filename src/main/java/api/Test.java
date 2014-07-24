@@ -6,13 +6,14 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/test/{someparam}/")
+@Path("/")
 public class Test {
 	
+	@Path("/test/{someparam}")
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String test(@PathParam("someparam") int someparam){
-		return "wtf" + someparam;
+		return "the number is" + someparam;
 	}
 
 }

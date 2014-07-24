@@ -32,6 +32,6 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>webapp</finalName>
+		<finalName>EphemeralDropbox</finalName>
 	</build>
 </project>
