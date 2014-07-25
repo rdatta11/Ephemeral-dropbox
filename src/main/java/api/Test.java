@@ -22,8 +22,8 @@ public class Test {
 	@Path("/getfileinfo/{fileId}")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public JSONObject getFileInfo(@PathParam("fileId") int fileId){
-		return new JSONObject().put("filename","test_file_1.txt").put("timeleft",250000);
+	public String getFileInfo(@PathParam("fileId") int fileId){
+		return new JSONObject().put("filename","test_file_1.txt").put("timeleft",250000).toString();
 	}
 	
 	@Path("/getfile/{fileId}")
